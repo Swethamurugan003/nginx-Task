@@ -6,14 +6,14 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: game
+      app: kubepro
   template:
     metadata:
       labels:
-        app: game
+        app: kubepro
     spec:
       containers:
-        - name: game
+        - name: kubepro
           image: swethamurugan03/game
           ports:
             - containerPort: 80
